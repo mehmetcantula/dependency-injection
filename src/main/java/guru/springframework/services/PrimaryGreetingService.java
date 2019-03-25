@@ -6,13 +6,13 @@ import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 
-@Service
-@Primary
-@Profile({"en", "default"})
 public class PrimaryGreetingService implements GreetingService {
 
-    @Autowired
-    private GreetingRepository greetingRepository;
+    GreetingRepository greetingRepository;
+
+    public PrimaryGreetingService(GreetingRepository greetingRepository) {
+        this.greetingRepository = greetingRepository;
+    }
 
     @Override
     public String sayGreeting() {
