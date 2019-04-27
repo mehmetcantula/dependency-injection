@@ -1,0 +1,34 @@
+# This is a comment line
+#Bosluklar onemli
+
+name: Mehmet
+
+names: #Burada da yorum satırı olabilir.
+  - Mehmet
+  - Burak
+  - Silas
+
+pound_sign: "#"
+
+book:
+  author: Yazar Biri
+  publisher: Basan Bir Yer
+
+
+truth: yes #True, Yes, TRUE olarak kullanılabilir
+
+string_val: "This is it's quote"
+
+colon_string: "my courses: one two"
+
+include_new_lines: |
+  asdfa
+  aadfa
+  adfafad
+
+ignore_new_lines: >
+  This is one
+  long
+  string
+
+
